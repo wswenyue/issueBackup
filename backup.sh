@@ -1,2 +1,8 @@
-wget https://api.github.com/repos/tomayday/MyBlog/issues
-wget https://api.github.com/repos/tomayday/MyBlog/issues/comments
+#!/bin/sh
+echo github issue 备份工具
+echo 请输入您的github用户名
+read username
+echo 请输入您的项目名字
+read repo
+wget https://api.github.com/repos/$username/$repos/issues
+wget https://api.github.com/repos/$username/$repos/issues/comments
